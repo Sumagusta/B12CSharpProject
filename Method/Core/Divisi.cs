@@ -11,5 +11,7 @@ namespace Oop.Core
         public string name;
         public string prestasi { get; set; }
         public int member { get; set; }
+        public string ketuaDivisi { get; set; }
+    
     }
 }
