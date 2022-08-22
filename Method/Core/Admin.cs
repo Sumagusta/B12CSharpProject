@@ -18,6 +18,7 @@ namespace Oop.Core
 
         public void divisiBio()
         {
+            biodataKaryawan();
             Divisi div = new Divisi();
             string name = div.name = "Robert";
             int member = div.member = 10;
