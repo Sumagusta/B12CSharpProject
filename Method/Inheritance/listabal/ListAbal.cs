@@ -28,5 +28,13 @@ namespace Oop.Inheritance.listabal
             Console.WriteLine("Logic Fungsi Tambahan");
 
         }
+
+        public void runAllFunc()
+        {
+            fungsi1();
+            fungsi2();
+            fungsi3();
+            fungsiTambahan();
+        }
     }
 }

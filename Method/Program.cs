@@ -4,6 +4,7 @@ using Oop.Inheritance.extend;
 using Oop.Inheritance.impl;
 using Oop.Inheritance.impl2;
 using Oop.Inheritance.listabal;
+using Oop.methodArgs.output;
 using Oop.Static;
 using System;
 
@@ -62,6 +63,10 @@ namespace Oop
             
             ListAbal ListAbal = new ListAbal();
             ListAbal.fungsiTambahan();
+            ListAbal.runAllFunc();
+
+            MethodOutput mo = new MethodOutput();
+            mo.rataRataNilai();
         }
     }
 }
