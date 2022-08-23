@@ -26,6 +26,7 @@ namespace Oop.Static
                 Console.WriteLine(movie2.judul);
 
 
+
         
         }
         

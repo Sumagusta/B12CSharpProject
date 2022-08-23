@@ -1,5 +1,6 @@
 ﻿using Oop.constructor;
 using Oop.Core;
+using Oop.Inheritance.impl;
 using Oop.Static;
 using System;
 
@@ -32,6 +33,14 @@ namespace Oop
 
             Console.WriteLine(Movie.tahun);
             Movie.runMovie();
+
+            EmployeePertama emp = new EmployeePertama();
+            emp.biodata();
+            emp.jabatan("Ketua Divisi");
+
+            IEmployeeContract emp2 = new EmployeePertama();
+            emp2.biodata();
+            emp2.jabatan("Ketua Divisi");
         }
     }
 }
