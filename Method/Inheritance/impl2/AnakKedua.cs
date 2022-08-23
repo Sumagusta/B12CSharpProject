@@ -22,5 +22,20 @@ namespace Oop.Inheritance.impl2
         {
             throw new NotImplementedException();
         }
+
+        public void warisan4()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void warisan5()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void warisan6()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

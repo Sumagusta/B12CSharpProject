@@ -10,7 +10,7 @@ namespace Oop.Inheritance.impl2
     {
         public void warisan1()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Emas Antam 2Kg");
         }
 
         public void warisan2()
