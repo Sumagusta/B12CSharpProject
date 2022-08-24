@@ -1,5 +1,6 @@
 ﻿using Oop.constructor;
 using Oop.Core;
+using Oop.generic;
 using Oop.Inheritance.extend;
 using Oop.Inheritance.impl;
 using Oop.Inheritance.impl2;
@@ -8,13 +9,14 @@ using Oop.methodArgs.output;
 using Oop.polymorphism.overriding;
 using Oop.Static;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Oop
 {
     class Program : Calculator
     {
-
-        
+                
         static void Main(string[] args)
         {
 
@@ -73,6 +75,15 @@ namespace Oop
             Animal klw = new Kelelawar();
             klw.suara();
 
+            // generic
+            Console.WriteLine("Generic Class");
+            Biodata<String> nama = new Biodata<string>("Robert");
+            Biodata<String> alamat = new Biodata<string>("Jakarta Selatan");
+            Biodata<int> usia = new Biodata<int>(25);
+
+            Console.WriteLine("Nama : {0}\nAlamat : {1}\nUsia : {2}\n", nama.getBiodata(), alamat.getBiodata(), usia.getBiodata());
+
+            IList<string> a = new List<string>();
 
         }
     }
