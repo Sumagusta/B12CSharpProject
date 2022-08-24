@@ -93,7 +93,7 @@ namespace Oop
             Console.WriteLine(print.nominal<string>("Lima Ratus"));
             Console.WriteLine(print.nominal<int>(500));
 
-
+            // generic interface
 
         }
     }
