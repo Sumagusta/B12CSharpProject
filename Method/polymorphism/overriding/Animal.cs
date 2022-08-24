@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Oop.polymorphism.overriding
 {
-    class Animal
+    public class Animal
     {
-        public void suara()
+        public virtual void suara() // virtual agar boleh di override
         {
             Console.WriteLine("Suara hewan");
         }
+
     }
 }

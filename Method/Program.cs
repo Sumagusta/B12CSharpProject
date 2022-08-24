@@ -5,6 +5,7 @@ using Oop.Inheritance.impl;
 using Oop.Inheritance.impl2;
 using Oop.Inheritance.listabal;
 using Oop.methodArgs.output;
+using Oop.polymorphism.overriding;
 using Oop.Static;
 using System;
 
@@ -66,7 +67,13 @@ namespace Oop
             ListAbal.runAllFunc();
 
             MethodOutput mo = new MethodOutput();
-            mo.rataRataNilai();
+            //mo.rataRataNilai();
+
+            Console.WriteLine("--Overriding--");
+            Animal klw = new Kelelawar();
+            klw.suara();
+
+
         }
     }
 }

@@ -8,9 +8,16 @@ namespace Oop.polymorphism.overriding
 {
     class Kelelawar : Animal
     {
-        public void suara()
+        public override void suara()
         {
             Console.WriteLine("Suara Kelelawar");
         }
+
+        public virtual void movement()
+        {
+            Console.WriteLine("Terbang");
+        }
+
+        
     }
 }
