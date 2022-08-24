@@ -79,11 +79,21 @@ namespace Oop
             Console.WriteLine("Generic Class");
             Biodata<String> nama = new Biodata<string>("Robert");
             Biodata<String> alamat = new Biodata<string>("Jakarta Selatan");
-            Biodata<int> usia = new Biodata<int>(25);
+            Biodata<int> usia = new Biodata<int>(7);
 
             Console.WriteLine("Nama : {0}\nAlamat : {1}\nUsia : {2}\n", nama.getBiodata(), alamat.getBiodata(), usia.getBiodata());
 
             IList<string> a = new List<string>();
+            IList<int> b = new List<int>();
+            a.Add("a");
+            b.Add(1);
+
+            // generic method
+            GenericMethod print = new GenericMethod();
+            Console.WriteLine(print.nominal<string>("Lima Ratus"));
+            Console.WriteLine(print.nominal<int>(500));
+
+
 
         }
     }
