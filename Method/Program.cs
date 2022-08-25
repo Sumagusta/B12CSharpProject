@@ -98,7 +98,7 @@ namespace Oop
 
             TryCatch tryObj = new TryCatch();
             int angka1 = 10;
-            int angka2 = 0;
+            int angka2 = 1;
             int[] arr = new int[2];
             //Console.WriteLine(tryObj.aritmatika(10, 0));
             try
@@ -109,18 +109,42 @@ namespace Oop
                 arr[2] = 4;*/
 
                 Console.WriteLine(tryObj.aritmatika(angka1, angka2));
+
+                try
+                {
+                    arr[0] = 2;
+                    arr[1] = 3;
+                    arr[2] = 4;
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    Console.WriteLine("Index Array tidak boleh > {0}, error : {1}", arr.Length, e.Message);
+                }
+                finally
+                {
+                    Console.WriteLine("Handle Nested 1 Exception");
+                }
             }
             catch (ArithmeticException e)
             {
-                Console.WriteLine("pembagi {0} tidak boleh bernilai 0, error : {1}", angka2, e.Message);
+                Console.WriteLine("Pembagi {0} tidak boleh bernilai 0, error : {1}", angka2, e.Message);
             }
             catch (IndexOutOfRangeException e)
             {
                 Console.WriteLine("Index Array tidak boleh > {0}, error : {1}", arr.Length, e.Message);
-
+            }
+            finally
+            {
+                Console.WriteLine("Syntax ini sudah dihandle");
             }
 
             Console.WriteLine("Fungsi yang dijalankan setelah aritmatika ..");
+
+            ThrowException te = new ThrowException();
+            //te.bioskop();
+
+            EmployeeKedua ep = new EmployeeKedua();
+            ep.durasi(2022);
 
         }
     }
