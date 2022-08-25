@@ -18,6 +18,7 @@ namespace Oop.generic
 
         public T getBiodata()
         {
+
             return obj;
         }
     }

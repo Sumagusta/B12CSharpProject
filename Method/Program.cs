@@ -8,6 +8,7 @@ using Oop.Inheritance.impl2;
 using Oop.Inheritance.listabal;
 using Oop.methodArgs.output;
 using Oop.polymorphism.overriding;
+using Oop.recursive;
 using Oop.Static;
 using System;
 using System.Collections;
@@ -144,7 +145,12 @@ namespace Oop
             //te.bioskop();
 
             EmployeeKedua ep = new EmployeeKedua();
-            ep.durasi(2022);
+           // ep.durasi(2022);
+
+            // recursiv
+            //Recursive1.running();
+            Recursive2.running();
+            
 
         }
     }
