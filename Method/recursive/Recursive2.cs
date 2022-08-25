@@ -18,8 +18,8 @@ namespace Oop.recursive
 			if (ukuran == 0 || ukuran == 1)
 			{
 				return ukuran;
-			}
-
+			} // f3 = f2 + f1
+			  // f2 = f1 + f0					2								1
 			return rekursifFibonachi(ukuran - 1, "kiri") + rekursifFibonachi(ukuran - 2, "kanan");
 		}
 
